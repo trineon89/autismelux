@@ -1,0 +1,110 @@
+@import url(http://fonts.googleapis.com/css?family=Slabo+27px);
+/* stylesheet Menu Semaine */
+/* created by Herman Yannick */
+body {
+	font-family: 'Slabo 27px', Sans-serif;
+	background-color: #FFF;
+	color: black;
+}
+
+div.aller {
+	font-size:0.7em;
+	text-align:center;
+	font-family: Sans-serif;
+}
+
+span {
+	font-size:xx-small;
+	vertical-align: bottom;
+}
+
+div.menu-semaine {
+	background-image: url("../images/Menusemaine/Menu_Semaine.png");
+	background-repeat: no-repeat;
+	width:555px;height:555px;
+	border:0px;
+}
+
+p.date {
+	font-size:1.5em;
+	font-style: italic;
+	font-weight: bold;
+	color: #FF8C11;
+	text-align:center;
+	padding-top: 80px;
+	margin-top: 0px;
+	margin-bottom: 55px;
+}
+
+div.jour {
+	font-size:1em;
+	color: #FF8C11;
+	font-style: italic;
+	font-weight: bold;
+	padding: 0px;
+	text-align:center;
+}
+
+div.menu {
+	margin-bottom: 3px;
+	font-size:0.9em;
+	text-align:center;
+	font-family: Sans-serif;
+}
+/*ms-insert.php*/
+table {
+	margin-left:auto;
+	margin-right: auto;
+	border-collapse: collapse;
+	width: 90%;
+}
+table.input {
+	width: 500px;
+}
+
+td {
+	padding: 3px;
+}
+
+th.theader {
+	font-family: 'Slabo 27px', Sans-serif;
+}
+
+td.tcell {
+	font-family: 'Slabo 27px', Sans-serif;
+}
+
+label {
+	color:#000000;
+	font-family: 'Slabo 27px', Sans-serif;
+}
+
+input {
+	width:100%;
+	font-family: 'Slabo 27px', Sans-serif;
+}
+
+input[type=text] {
+	padding: 3px;
+	border: solid 2px #dcdcdc;
+	transition: box-shadow 0.3s, border 0.3s;
+	background-color: #FBFBFB;
+}
+
+input[type=text].focus,
+input[type=text]:focus {
+	border: solid 2px #A0A0A0;
+	box-shadow: 0 0 5px 1px #969696;
+}
+
+
+input[type=submit],input[type=button] {
+	padding: 1px;
+	border: solid 2px #dcdcdc;
+	transition: box-shadow 0.3s, border 0.3s;
+	background-color: #EBEBEB;
+}
+
+.newbutton {
+	width: 300px;
+}

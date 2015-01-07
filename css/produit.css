@@ -1,0 +1,307 @@
+@font-face { font-family: 'Aller-Display';
+             src: url('fonts/AllerDisplay.ttf') format('truetype'); }
+/**********************/
+/**CUSTOM CSS PRODUIT**/
+/**********************/
+@media (min-width: 640px) {
+	.grid-container {
+		display: none;
+		padding-left:55px;
+	}
+	/* ----- Image grids ----- */
+	ul.rig {
+		list-style: none;
+		font-size: 0px;
+		/*margin-left: -2.5%; /* should match li left margin */
+	}
+	ul.rig li {
+		display: inline-block;
+		padding: 10px;
+		margin: 10px 1.5% 1% 1.5%;
+		background: #fff;
+		border: 1px solid #ddd;
+		font-size: 16px;
+		font-size: 1rem;
+		vertical-align: top;
+		box-shadow: 0 0 5px #ddd;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+	}
+	ul.rig li:hover {
+		box-shadow: 0 0 5px #66CCFF;
+	}
+	ul.rig li img {
+		max-width: 100%;
+		height: auto;
+		margin: 0 0 10px;
+	}
+	ul.rig li h3 {
+		margin: 0 0 5px;
+		color: #000;
+	}
+	ul.rig li p {
+		font-size: .9em;
+		line-height: 1.5em;
+		color: #999;
+	}
+	
+	/* class for 2 columns */
+	ul.rig.columns-2 li {
+		width: 47.5%; /* this value + 2.5 should = 50% */
+	}
+	/* class for 3 columns */
+	ul.rig.columns-3 li {
+		width: 30.83%; /* this value + 2.5 should = 33% */
+	}
+	/* class for 4 columns */
+	ul.rig.columns-4 li {
+		width: 21%; /* this value + 2.5 should = 25% */
+	}
+	
+	/* SINGLE PRODUCT */
+	.rigsingle {
+		position:relative;
+		width: 90%;
+		max-width:1000px;
+		float:left;
+		padding: 10px;
+		margin: 2% 1.5% 2.5% 5%;
+		background: #fff;
+		border: 1px solid #ddd;
+		vertical-align: top;
+		box-shadow: 0 0 5px #ddd;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+	}
+	.rigsingle img {
+		float:left;
+		width: 100%;
+		height: auto;
+		margin: 0 0 10px;
+	}
+	.rigsingle h3 {
+		text-align:center;
+		margin: 5px 0 5px 10px;
+	}
+	.rigsingle h5 {
+		text-align:right;
+		font-style: italic;
+		font-size: .7em;
+		margin: 5px 0 5px 10px;
+	}
+	.rigsingle p {
+		margin: 5px 0 5px 10px;
+		font-size: .9em;
+		line-height: 1.5em;
+		color: #999;
+	}
+	
+	.rigsingle .price {
+		font-family:'Aller-Display';
+		font-size: 3em;
+		position:absolute;
+		bottom:10px;
+		right: 0px;
+		width:auto;
+		color:white;
+		padding: 5px 30px 5px 10px;
+		background-color: #444878;
+		
+		border-radius: 30px 0px 0px 0px;
+		-moz-border-radius: 30px 0px 0px 0px;
+		-webkit-border-radius: 30px 0px 0px 0px;
+		
+		-webkit-box-shadow: -10px 10px 2px -2px rgba(0,0,0,0.25);
+		-moz-box-shadow: -10px 10px 2px -2px rgba(0,0,0,0.25);
+		box-shadow: -10px 10px 2px -2px rgba(0,0,0,0.25);
+		
+	}
+	
+	.imgthumb {
+		width:100px !important;
+		/*position:absolute;
+		bottom:0px;
+		left:0px;*/
+	}
+	#gal1 {
+		width:500px;
+		float:left;
+		vertical-align:baseline;
+		display:block;
+	}
+	#leftsingle {
+		width:500px;
+		float:left;
+		vertical-align:baseline;
+		display:block;
+	}
+	#rightsingle {
+		width:465px;
+		float:left;
+		vertical-align:baseline;
+		display:block;
+	}
+	
+	.back {
+		float:none !important;
+		display:block;
+	}
+	
+	
+	.back a,.back a:visited,.back a:link,.back a:link:active,.back a:visited:active,.back a:hover{
+		transition:none;
+	line-height:1.5em;
+	}
+	
+	.icon {
+		
+	}
+	.icon img{
+		left:5px;
+		margin:5px auto 2% 5px;
+		width:40px;
+		opacity: 0.7;
+		height:40px;
+	}
+	.icon img:hover{
+		opacity: 1;
+	}
+	#sideselector {
+		-webkit-border-top-right-radius: 15px;
+		-webkit-border-bottom-right-radius: 15px;
+		-moz-border-radius-topright: 15px;
+		-moz-border-radius-bottomright: 15px;
+		border-top-right-radius: 15px;
+		border-bottom-right-radius: 15px;
+	}
+	.tooltip{
+		display: inline;
+		position: relative;
+	}
+	.tooltip:hover:after{
+		top:-25px;
+		background: #333;
+		background: rgba(0,0,0,.8);
+		border-radius: 5px;
+		font-family:'Open Sans Condensed', sans-serif;
+		text-align:center;
+		color: #fff;
+		content: attr(title);
+		left: 55px;
+		padding: 5px 5px;
+		position: absolute;
+		z-index: 98;
+		width: 80px;
+	}
+	.mask {
+		background: #F09A1E;
+		-webkit-border-top-right-radius: 15px;
+		-webkit-border-bottom-right-radius: 15px;
+		-moz-border-radius-topright: 15px;
+		-moz-border-radius-bottomright: 15px;
+		border-top-right-radius: 15px;
+		border-bottom-right-radius: 15px;
+		
+	}
+	
+	.tags {
+	  list-style: none;
+	  margin-left: 80px;
+	  overflow: hidden; 
+	  padding: 0;
+	  display:block;
+	}
+	
+	.tags li {
+	  float: left; 
+	}
+
+	.tag {
+	  background: rgba(0,0,0,.15);
+	  border-radius: 3px 0 0 3px;
+	  color: #4E4E4E !important;
+	  display: inline-block;
+	  height: 26px;
+	  line-height: 26px;
+	  padding: 0 20px 0 23px;
+	  position: relative;
+	  margin: 0 10px 10px 0;
+	  text-decoration: none;
+	  transition: none !important;
+	}
+
+	.tag::before {
+	  background: #FDF5EC; /*default bg color*/
+	  border-radius: 10px;
+	  box-shadow: inset 0 1px rgba(0,0,0,.15);
+	  content: '';
+	  height: 6px;
+	  left: 10px;
+	  position: absolute;
+	  width: 6px;
+	  top: 10px;
+	}
+
+	.tag::after {
+	  background: #FDF5EC; /*default bg color*/
+	  border-bottom: 13px solid transparent;
+	  border-left: 10px solid rgba(0,0,0,.15);
+	  border-top: 13px solid transparent;
+	  content: '';
+	  position: absolute;
+	  right: 0;
+	  top: 0;
+	}
+
+	.tag:hover {
+	  background-color: #F09A1E;
+	  color: white;
+	}
+
+	.tag:hover::after {
+	   border-left-color: #F09A1E; 
+	}
+	
+}
+
+@media (max-width: 1199px) {
+	.container {
+		width: auto;
+		padding: 0 10px;
+	}
+}
+
+@media (max-width: 640px) {
+	ul.rig {
+		margin-left: 0;
+	}
+	ul.rig li {
+		display:block;
+		width: 100% !important; /* over-ride all li styles */
+		margin: 0 0 20px;
+		background: #fff;
+		border: 1px solid #ddd;
+		font-size: 16px;
+		font-size: 1rem;
+		vertical-align: top;
+		box-shadow: 0 0 5px #ddd;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+	}
+	ul.rig li img {
+		max-width: 100%;
+		height: auto;
+		margin: 0 0 10px;
+	}
+	ul.rig li h3 {
+		margin: 0 0 5px;
+	}
+	ul.rig li p {
+		font-size: .9em;
+		line-height: 1.5em;
+		color: #999;
+	}
+}

@@ -1,0 +1,81 @@
+/**********************/
+/**CUSTOM CSS CONTACT**/
+/**********************/
+
+#mainself article .smallimage{
+	height:18px;
+	width:auto;
+}
+
+article {
+	display: block;
+	text-align:left;
+	width: 300px;
+	float: left;
+	padding-top:10px;
+	padding-right:5px;
+}
+#mainself {
+	margin-top: 15px;
+	margin-bottom:10px;
+	margin-left: 88px;
+	height: 550px;
+	width:90%;
+	margin-bottom: 45px;
+}
+#mainself a {
+	color: black;
+	text-decoration: underline;
+}
+#mainself article img {
+	width: 100px;
+    height: auto;
+	float: left;
+	
+	-webkit-border-top-left-radius: 25px;
+	-moz-border-radius-topleft: 	25px;
+	border-top-left-radius: 		25px;
+	-webkit-box-shadow: 0px 8px 6px 0px rgba(220, 220, 220, 0.45);
+	-moz-box-shadow:    0px 8px 6px 0px rgba(220, 220, 220, 0.45);
+	box-shadow:         0px 8px 6px 0px rgba(220, 220, 220, 0.45);
+}
+#mainself article header {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 1.6em;
+	line-height: 1em;
+	margin-left:115px;
+	/*margin-top: -8px;*/
+}
+#mainself article p {
+	font-size: 0.8em;
+	width: 150px;
+	margin-left:115px;
+	margin-right:0px;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+#mainself section {
+	min-height: 160px;
+}
+#mainself section header {
+	font-size: 2em;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+#mainself .collapsermin {
+	background:url("../img/Autisme-Minus-sm.png") no-repeat left top;
+	position:relative;
+	top:8px;
+	left:-10px;
+	float:left;
+	width:28px;
+	height:26px;
+}
+#mainself .collapsermax {
+	background:url("../img/Autisme-Plus-sm.png") no-repeat left top;
+	position:relative;
+	top:8px;
+	left:-10px;
+	float:left;
+	width:28px;
+	height:26px;
+}

@@ -1,0 +1,525 @@
+/* main.css */
+/* COPYRIGHT: STAUDT Jill - Autisme Luxembourg asbl*/
+/* 
+##############################
+###	       GLOBALS         ###
+##############################
+*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,700,800,600);
+@import url(http://fonts.googleapis.com/css?family=Raleway:700);
+@import url(http://fonts.googleapis.com/css?family=Satisfy);
+html, html a, p, a:visited, a:hover, li {
+    text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: subpixel-antialiased !important;
+    /*text-shadow: 0 0 1px rgba(0,0,0,0.3);*/
+}
+body {
+	background: #FDF5EC;
+}
+
+a, a:visited, a:link, a:link:active, a:visited:active {
+	color: #DDDDDD;
+	text-decoration: none;
+	transition: all 0.2s ease;
+}
+a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+	display: inline;
+}
+li {
+    display: inline;
+}
+#footer {
+	margin-top: 15px;
+	margin-left: 82px;
+	/*background-color: #f09a1e;   Old browsers */
+	width:1200px;
+	height:38px;
+}
+.clearfloat {
+	clear: both;
+}
+p {
+	text-align: justify;
+    text-justify: auto;
+}
+
+/* 
+##############################
+###	        HEADER       						     ###
+##############################
+*/
+@media (min-width: 1386px) {
+	#headerback {
+		z-index:1;
+		position:relative;
+		background:url("../img/header.png") no-repeat left top;
+		height: 90px;
+		margin: 0 0 10px 0;
+		-webkit-box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.3);
+		-moz-box-shadow:    0px 5px 6px 0px rgba(0, 0, 0, 0.3);
+		box-shadow:         0px 5px 6px 0px rgba(0, 0, 0, 0.3);
+	}
+	#headerback a img{
+		position: absolute;
+		top: 5px;
+		left: 2px;
+		display: inline-block;
+		margin: 0 10px 0 0;
+		width:78px;
+	}
+									/* Navigation First Level */
+
+	.topnavigation{
+		font-family: 'Open Sans Condensed', sans-serif;
+		padding-top: 40px;
+		margin-left: 180px;
+		overflow:none;
+		
+	}
+
+	.topnavigation ul {
+		height: 25px;
+		background-color: #233477;
+		font-size: 15px;
+		
+		-webkit-border-bottom-left-radius: 20px;
+		-moz-border-radius-bottomleft: 20px;
+		border-bottom-left-radius: 20px;
+		-webkit-box-shadow:	0px 4px 8px 0px rgba(20, 20, 20, 0.5);
+		-moz-box-shadow:		0px 4px 8px 0px rgba(20, 20, 20, 0.5);
+		box-shadow:				0px 4px 8px 0px rgba(20, 20, 20, 0.5);
+	}
+
+	.topnavigation li{
+		float:left;
+		width: 215px;
+		min-width:190px;
+		height:40px;
+		padding:0px;
+
+	}
+
+
+	.topnavigation li a {
+		display: block;
+		text-align:center;
+		font-size: 2em;
+		color: #fff;
+		vertical-align: middle;
+		height: 50px;
+		line-height: 25px;
+		padding:0px 0px 0px 0px;
+		white-space:nowrap;
+	}
+
+	.topnavigation li a:hover {
+		color: #fafafa;
+		font-size:2.1em; /*edit*/ 
+	}
+
+									/* Navigation Second Level */
+
+
+	.topnavigation li ul {
+		position:absolute;
+		display:none;
+		width:210px;
+		height: auto;
+	}
+
+	.topnavigation li:hover > ul {
+		display:block;
+	}
+
+	.topnavigation li li {
+		position:relative;
+		left: 10px;
+		display:block;
+		float:none;
+		height:25px;
+	}
+
+	.topnavigation li ul a {
+		text-align:left;
+		vertical-align: middle;
+		height: 25px;
+		display:inline;
+		font-size: 16px;
+	}
+	.topnavigation li ul a:hover {
+		font-size:19px; /*edit*/ 
+	}
+	.topnavigation li li ul {
+		position:absolute;
+		top:0;
+		left:100%;
+	}
+
+	#page {
+		min-width: 1368px;
+		margin-left:auto;
+		margin:0 auto 0;
+	}
+}
+@media (max-width: 1386px) {
+	#page {
+		width:100%;
+	}
+	#headerback {
+		display:none;
+	}
+}
+.menuiconspacer {
+	text-align:center;
+	width: 30px;
+	float:left;
+	padding-left: 5px;
+}
+/* 
+##############################
+###	     FRONTPAGE         ###
+##############################
+*/
+#mainself {
+	margin-top:2.5%;
+	margin-bottom:2.5%;
+	margin-left: 88px;
+	height: 100%;
+	max-height:500px;
+	min-height: 280px;
+	width: 1195px;
+}
+#featuredimage {
+	width: 597px;
+	/*background:url("../img/supuz.jpg") no-repeat left;
+	background-size: 100% auto;*/
+	height:280px;
+	float:left;
+	background-color: #EFF8FB;
+	
+	-webkit-border-top-left-radius: 50px;
+	-moz-border-radius-topleft: 50px;
+	border-top-left-radius: 50px;
+	-webkit-box-shadow: 0px 12px 8px 0px rgba(220, 220, 220, 1);
+	-moz-box-shadow:    0px 12px 8px 0px rgba(220, 220, 220, 1);
+	box-shadow:         0px 12px 8px 0px rgba(220, 220, 220, 1);
+}
+#benevol {
+	background:url("../img/devenir_benevol.png") no-repeat left top;
+	width:297px;
+	height:140px;
+	float:left;
+	background-color: #EFF8FB;
+	border: 1px solid #EFF8FB;
+	border-bottom: 1px solid #ffffff;
+}
+#don {
+	width:297px;
+	height:140px;
+	float:left;
+	background-color: #EFF8FB;
+	border: 1px solid #EFF8FB;
+    border-left: 1px solid #ffffff;
+	border-bottom: 1px solid #ffffff;
+	
+}
+#don_background {
+	width:297px;
+	height:130px;
+	background:url("../img/don-confiance.png") no-repeat bottom left;
+	background-size:28% auto;
+}
+#don header {
+  margin-top:5px;
+  font-size: 17px;
+  font-family: "Open Sans";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: center;
+  font-weight: 600;
+}
+#virement {
+  font-size: 23px;
+  font-family: "Open Sans Condensed";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: center;
+  margin-top:8px;
+  margin-bottom:8px;
+}
+
+#virementcode {
+  font-size: 15px;
+  font-family: "Open Sans Condensed";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: right;
+  margin-top:12px;
+  margin-right:5px;
+}
+#ecoute {
+	width:596px;
+	height:137px;
+	float:left;
+	background-color: #EFF8FB;
+	border: 1px solid #EFF8FB;
+	font-size: 36px;
+	font-family: 'Raleway', sans-serif;
+	color: rgb(0, 0, 0);
+	text-align: left;
+	-webkit-box-shadow: 0px 12px 8px 0px rgba(220, 220, 220, 1);
+	-moz-box-shadow:    0px 12px 8px 0px rgba(220, 220, 220, 1);
+	box-shadow:         0px 12px 8px 0px rgba(220, 220, 220, 1);
+}
+#ecoute_p {	
+ margin:3px 20px 0 20px;
+ text-align: left;
+ }
+#competence {
+ margin:3px 110px 0 20px;
+ text-align: center;
+}
+#dynamisme {
+ margin:3px 20px 0 20px;
+ text-align: right;
+}
+
+/* 
+##############################
+###	       CONTENT         ###
+##############################
+*/
+
+[contenteditable]{
+	border-color: #FF4040;
+	border-style: solid;
+	border:1px;
+}
+
+.container ol {
+	list-style:disc outside none; 
+}
+
+.container ol li {
+   display:list-item;
+   margin-bottom:10px;
+}
+
+#page .container p, li {
+	line-height:1.7em;
+}
+
+#page .container ul {
+	margin:0;
+	padding:0;
+	/*position:absolute;
+	right:24px;
+	bottom:-12px;*/
+	list-style:none;
+}
+
+
+
+#page .container a, a:hover {	
+	color:black;
+	line-height:1.7em;
+	/*font-size:11px;*/
+}
+
+#page .container .autolink a {
+	float:left;
+	height:24px;
+	position:relative;
+	margin-left:20px;
+	padding:0 10px 0 12px;
+	background:#005893;
+	color:#fff;
+	text-decoration:none;
+	transition: initial;
+	-moz-border-radius-bottomright:4px;
+	-webkit-border-bottom-right-radius:4px;	
+	border-bottom-right-radius:4px;
+	-moz-border-radius-topright:4px;
+	-webkit-border-top-right-radius:4px;	
+	border-top-right-radius:4px;	
+}
+
+#page .container .autolink a:before{
+	content:"";
+	float:left;
+	position:absolute;
+	top:0;
+	left:-12px;
+	width:0;
+	height:0;
+	border-color:transparent #005893 transparent transparent;
+	border-style:solid;
+	border-width:12px 12px 12px 0;	
+}
+
+#page .container .autolink a:after{
+	content:"";
+	position:absolute;
+	top:10px;
+	left:0;
+	float:left;
+	width:4px;
+	height:4px;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+	background:#fff;
+	-moz-box-shadow:-1px -1px 2px #004977;
+	-webkit-box-shadow:-1px -1px 2px #004977;
+	box-shadow:-1px -1px 2px #004977;
+}
+
+#page .container .autolink a:hover {
+	background: #f09a1e;
+}
+
+#page .container .autolink a:hover:before{
+	border-color:transparent #f09a1e transparent transparent;
+}
+
+h1 {
+	vertical-align: center;
+}
+
+.reclame {
+	background: #4F81BD;
+	brackground-color: #4F81BD;
+	
+	max-width: 300px;
+	border:solid 5px #AABBCC;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	
+	transform: rotate(355deg) ;
+	-webkit-transform: rotate(355deg) ;
+	-moz-transform: rotate(355deg) ;
+	-o-transform: rotate(355deg) ;
+	-ms-transform: rotate(355deg) ;
+}
+.reclame p {
+	font-family: 'Satisfy', cursive;
+	vertical-align:middle;
+	text-align: center;
+	font-size: 24px;
+	color: #fff;
+}
+
+/* 
+##############################
+###	        FOOTER         ###
+##############################
+*/
+#footerback {
+	background:url("../img/footer.png") no-repeat left top;
+	height: 45px;
+	z-index:-1;
+}
+
+.orangecontainer {
+	
+	margin-top:45px;
+	height: 175px;
+	width: 199px;
+	float:left;
+	z-index:0;
+	position:relative;
+	background-color: #F6E3CE;
+	-webkit-box-shadow: 0px 12px 8px 0px rgba(220, 220, 220, 1);
+	-moz-box-shadow:    0px 12px 8px 0px rgba(220, 220, 220, 1);
+	box-shadow:         0px 12px 8px 0px rgba(220, 220, 220, 1);
+
+border: 1px solid #F6E3CE;
+border-right: 1px solid #f09a1e;
+border-top: 1px solid #f09a1e;
+border-left: 0px solid #fff;
+}
+.orangecontainer li{
+	margin-top:-45px;
+}
+.orangecontainer article{
+	margin-top:-45px;
+	display:block;
+	width: 195px;
+}
+.oheader {
+	
+	font-size: 10pt;
+	height:20px;
+	padding-top:50px;
+	font-weight: bold;
+	text-align:center;
+	z-index:99w;
+	margin: 10px 0 10px;
+}
+.orangecontainer a {
+		color: #000;
+	}
+	
+.takeawayheader {
+	height: 70px;
+	font-size: 10pt;
+	padding-top:50px;
+	font-weight: bold;
+	text-align:center;
+	margin: 10px 0 10px;
+}
+#footerback li {
+	display:inline-block;
+	text-align:center;
+	height: 45px;
+	line-height: 45px;
+	vertical-align: middle;
+	min-width:200px;
+	width: 16,6%;
+	float:left;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #000;
+	font-size: 1.4em;
+
+}
+#footerback p {
+	font-family: 'Open Sans', sans-serif;
+	text-align:center;
+	color: #000;
+	font-size: 9pt;
+	margin: 2px 2px 2px 2px;
+}
+#footerback footer {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 7pt;
+	color: #000;
+	text-align:right;
+	position: absolute;
+	bottom:0px;
+	right: 0px;
+	padding: 0 8px;
+	background-color: #f09a1e;
+	border-radius: 6px 0 0 0;
+}
+#footerback footer p{
+	
+}
+#footerback article {
+	height:220px;
+}
+
+.SaveButton {
+	position:fixed;
+	bottom:	0px;
+	right:0px;
+	padding:15px;
+}

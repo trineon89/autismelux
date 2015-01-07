@@ -1,0 +1,35 @@
+INSERT INTO `tblContent` (`dtSite`, `dtType`, `dtContent`) VALUES
+('cdl', '_TITLE_big_', '<h1>Centre de loisirs (CDL)</h1>'),
+('cdl', '_TITLE_comment_', '<p></p>'),
+('cdl', '_TITLE_first_', '<h2>&nbsp;​</h2>'),
+('cdl', '_CONTENT_first_', '<p></p>'),
+('cdl', '_TITLE_second_', '<h2>&nbsp;​</h2>'),
+('cdl', '_CONTENT_second_', '<p></p>'),
+
+('sad', '_TITLE_big_', '<h1>Service aide à domicile (SAD)</h1>'),
+('sad', '_TITLE_comment_', '<p></p>'),
+('sad', '_TITLE_first_', '<h2>&nbsp;​</h2>'),
+('sad', '_CONTENT_first_', '<p></p>'),
+('sad', '_TITLE_second_', '<h2>&nbsp;​</h2>'),
+('sad', '_CONTENT_second_', '<p></p>'),
+
+('sia', '_TITLE_big_', '<h1>Service d\'intervention ambulatoire (SIA)</h1>'),
+('sia', '_TITLE_comment_', '<p></p>'),
+('sia', '_TITLE_first_', '<h2>&nbsp;​</h2>'),
+('sia', '_CONTENT_first_', '<p></p>'),
+('sia', '_TITLE_second_', '<h2>&nbsp;​</h2>'),
+('sia', '_CONTENT_second_', '<p></p>'),
+
+('sc', '_TITLE_big_', '<h1>Service de consulation (SC)</h1>'),
+('sc', '_TITLE_comment_', '<p></p>'),
+('sc', '_TITLE_first_', '<h2>&nbsp;​</h2>'),
+('sc', '_CONTENT_first_', '<p></p>'),
+('sc', '_TITLE_second_', '<h2>&nbsp;​</h2>'),
+('sc', '_CONTENT_second_', '<p></p>'),
+
+('jobcoach', '_TITLE_big_', '<h1>Jobcoach)</h1>'),
+('jobcoach', '_TITLE_comment_', '<p></p>'),
+('jobcoach', '_TITLE_first_', '<h2>&nbsp;​</h2>'),
+('jobcoach', '_CONTENT_first_', '<p></p>'),
+('jobcoach', '_TITLE_second_', '<h2>&nbsp;​</h2>'),
+('jobcoach', '_CONTENT_second_', '<p></p>');

@@ -1,0 +1,41 @@
+/*************************/
+/**CUSTOM CSS FOOTER MIN**/
+/*************************/
+@media (min-width: 1386px) {
+	#footer {
+		position: fixed;
+		bottom:0;
+		height:45px;
+		transition: 1s;
+	}
+	.orangecontainer {
+		height:175px;
+	}
+	/*
+	.orangecontainer:hover > article,footer {
+		display:block;
+		height:45px;
+	}
+	.orangecontainer:hover {
+		height:185px;
+	}
+	*/
+	#footer:hover {
+		height:222px;
+		transition: 1s;
+	}
+	.orangecontainer article {
+		display:block;
+	}
+	.clearbottom {
+		height:50px;
+	}
+}
+@media (max-width: 1386px) {
+	#footer {
+		display:none;
+	}
+}
+	.orangecontainer a {
+		color: #000;
+	}
