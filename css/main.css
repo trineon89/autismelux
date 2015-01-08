@@ -100,8 +100,7 @@ p {
 
 	.topnavigation li{
 		float:left;
-		width: 215px;
-		min-width:190px;
+		width: 200px;
 		height:40px;
 		padding:0px;
 
@@ -144,7 +143,7 @@ p {
 		left: 10px;
 		display:block;
 		float:none;
-		height:25px;
+		height:30px;
 	}
 
 	.topnavigation li ul a {
