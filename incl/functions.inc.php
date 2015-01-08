@@ -77,11 +77,39 @@
 		return autolink_get($pageid); 
 		else return $text;
 	}
+	
 	function is_reclame($text)
 	{
 		if ($text == '<p>!reclame!</p>')
 		return autoreclame_get();
 		else return $text;
+	}
+	
+	function get_all_media()
+	{
+		$sqlq="SELECT * FROM tblMedia ORDER BY dtCategory,dtTitle ASC";
+		$result = mysql_query($sqlq) or die(mysql_error());
+		if(mysql_num_rows($result) > 0)
+		{
+			$counti=0;
+			while($roow = mysql_fetch_array($result, MYSQL_ASSOC)) {
+				if ($counti == 0)  // FIRST EXECUTION for every Category
+				{
+					$counti++;
+					$category=$roow[dtCategory];
+					$mediaresult="<h2 style=\"margin-bottom:0px;\">".$category."</h2><ul class=\"rig\">";
+				}
+				$mediaresult.= "<li><img src=\".".$roow[dtImage]."\" /><p>".$roow[dtTitle]."</p></li>";
+				if($category<>$roow[dtCategory]) //change of category
+				{
+					echo "</ul>";
+					$counti=0;
+				}
+			}
+		} else {
+			$mediaresult= "NO MEDIA";
+		}
+		return $mediaresult;
 	}
 	
 	function daily_menu_exists()

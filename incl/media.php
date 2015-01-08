@@ -8,7 +8,8 @@
 	</head>
 	<body>
 		<div id="two-columns" class="grid-container">
-			<h2 style="margin-bottom:0px;">Infoautisme</h2>
+		<?php echo get_all_media() ?>
+			<!--<h2 style="margin-bottom:0px;">Infoautisme</h2>
 			<ul class="rig">
 				<li><img src="./img/upload/infoautisme/maquette01.jpg" /><p>Infoautisme 1</p></li>
 				<li><img src="./img/upload/infoautisme/maquette02.jpg" /></li>
@@ -33,6 +34,6 @@
 				<li><p>Campagne d'information sur l'Autisme</p></li>
 				<li><p>Nordliicht TV: reportage Centre Roger Thelen Beckerich</p></li>
 				<li><p>Kulturfabrik: reportage Keramikfabrik Autisme Luxembourg asbl</p></li>
-			</ul>
+			</ul>-->
 	</body>
 </html>
