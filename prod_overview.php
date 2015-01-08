@@ -21,7 +21,104 @@
 </div>
 	<!-- include of header / nav -->
 <div id="two-columns" class="grid-container" style="display:block;">
-	<ul class="rig columns-6">
+<ul class="rig columns-6">
+<?php
+	if(isset($_GET['classe'] ))
+	{
+		switch ($_GET['classe'])
+		{
+			case 'artisanal':
+				?>
+				<li class="viewslide">
+					<a href="produit.php?class=couture"><img src="img/picto-atelier/bitzerei.png" />	
+					<div class="mask">
+						<h3>Couture</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p></a>
+					</div>
+				</li>
+				<li>
+					<a href="produit.php?class=ceramique"><img src="img/picto-atelier/keramikfabrik.png" />
+					<div class="mask">
+						<h3>Ceramique</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p></a>
+					</div>
+				</li>
+				<li>
+					<a href="produit.php?class=papier"><img src="img/picto-atelier/pabeier.png" />
+					<div class="mask">
+						<h3>Pabier recyclé</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p></a>
+					</div>
+				</li>
+				<li>
+					<a href="produit.php?class=jardinage"><img src="img/picto-atelier/gaertnerei.png" />
+					<div class="mask">
+						<h3>Jardinage</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p></a>
+					</div>
+				</li>
+				<li>
+					<a href="produit.php?class=buanderie"><img src="img/picto-atelier/waescherei.png" />
+					<div class="mask">
+						<h3>Buanderie</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p></a>
+					</div>
+				</li>
+				<?
+			break;
+			case 'infomedia':
+				?>
+					<li>
+						<a href="produit.php?class=imprimerie"><img src="img/picto-atelier/dreckerei.png" />
+						<div class="mask">
+							<h3>Imprimerie digitale</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p></a>
+						</div>
+					</li>
+					<li>
+						<a href="produit.php?class=backoffice"><img src="img/picto-atelier/back-office.png" />
+						<div class="mask">
+							<h3>Back-office</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p></a>
+						</div>
+					</li>
+					<li>
+						<a href="produit.php?class=info-media"><img src="img/picto-atelier/info-media.png" />
+						<div class="mask">
+							<h3>Info-média</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p></a>
+						</div>
+					</li>
+				<?
+			break;
+			case 'pdb':
+				?>
+					<li>
+						<a href="produit.php?class=cuisine"><img src="img/picto-atelier/kichen.png" />
+						<div class="mask">
+							<h3>Cuisine</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p></a>
+						</div>
+					</li>
+					<li>
+						<a href="produit.php?class=confiserie"><img src="img/picto-atelier/confiserie.png" />
+						<div class="mask">
+							<h3>Confiserie</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p></a>
+						</div>
+					</li>
+					<li>
+						<a href="produit.php?class=takeaway"><img src="img/picto-atelier/takeaway.png" />
+						<div class="mask">
+							<h3>Takeaway</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p></a>
+						</div>
+					</li>
+				<?
+			break;
+		}
+	} else {
+?>
 		<li class="viewslide">
 			<a href="produit.php?class=couture"><img src="img/picto-atelier/bitzerei.png" />	
 			<div class="mask">
@@ -99,6 +196,7 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p></a>
 			</div>
 		</li>
+	<? } //end else?>
 	</ul>
 </div>
 	

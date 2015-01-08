@@ -61,9 +61,9 @@
 		</li>
 		<li><a href="prod_overview.php">Nos produits</a>
 			<ul>
-				<li><a href="#">Produits artisanal</a></li>
-				<li><a href="#">Produits info-média</a></li>
-				<li><a href="#">Produits de bouche</a></li>
+				<li><a href="prod_overview.php?classe=artisanal">Produits artisanal</a></li>
+				<li><a href="prod_overview.php?classe=infomedia">Produits info-média</a></li>
+				<li><a href="prod_overview.php?classe=pdb">Produits de bouche</a></li>
 			</ul>
 		</li>
 		<li><a href="contact.php">Contact</a>
