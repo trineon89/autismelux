@@ -24,13 +24,13 @@
 	box-shadow: 1px 1px 5px 1px rgba(189,189,189,0.36);
 }
 .sidenav ul li a{
-	color:#D1D3FF;
+	color:#D1D3FF !important;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 1.5em;
 	line-height: 1.4em;
 }
 .sidenav ul li a:hover,.sidenav ul li a:active{
-	color:#F2F3FF;
+	color:#F2F3FF !important;
 }
 .sidenav ul ul{
 	
@@ -39,13 +39,17 @@
 	margin-left:15px;
 }
 .sidenav ul ul li a{
-	color:#424242;
+	color:#424242 !important;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.0em;
+	font-weight:bold;
 }
 .sidenav ul ul li a:hover,.sidenav ul ul li a:active{
-	color:#A3A3A3;
+	color:#A3A3A3 !important;
+}
+.sidenav ul ul ul li a{
+	font-weight:initial;
 }
 .breaksidenav {
-
+	padding-bottom:20px;
 }

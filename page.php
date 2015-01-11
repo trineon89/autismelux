@@ -173,7 +173,11 @@
 			<div><?php echo $title_big[0]; ?><!-- _TITLE_big_ h1--></div>
 			<div class="row">
 				<div class="columns four">
-					<div><?php echo $titler_second; ?><!-- _CONTENT_second_ p--></div>
+					<div>
+					<?php 
+						require_once('./incl/sidemenu.inc.php');
+						echo $titler_second; 
+					?><!-- _CONTENT_second_ p--></div>
 				</div>
 				<div class="columns eight">
 					<div><?php echo $title_cofi[0]; ?><!-- _CONTENT_first_ p--></div>
