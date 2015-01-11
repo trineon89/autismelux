@@ -18,10 +18,7 @@
 	<script>
 		function Save() {
 			document.getElementById("hidden_TITLE_big_").value=document.getElementById("_TITLE_big_").innerHTML;
-			document.getElementById("hidden_TITLE_comment_").value=document.getElementById("_TITLE_comment_").innerHTML;
-			document.getElementById("hidden_TITLE_first_").value=document.getElementById("_TITLE_first_").innerHTML;
 			document.getElementById("hidden_CONTENT_first_").value=document.getElementById("_CONTENT_first_").innerHTML;
-			document.getElementById("hidden_TITLE_second_").value=document.getElementById("_TITLE_second_").innerHTML;
 			document.getElementById("hidden_CONTENT_second_").value=document.getElementById("_CONTENT_second_").innerHTML;
 			document.editform.submit()
 		}
@@ -90,30 +87,6 @@
 			}
 			$result = mysql_query($sqlupdatequery);
 		}
-		if(isset($_POST["hidden_TITLE_comment_"]))
-		{
-			$newval=$_POST["hidden_TITLE_comment_"];
-			if (strpos($newval,'<!--')>=0) { $newval=substr_replace($newval,'',strpos($newval,'<!--')); }
-			$newval=addslashes($newval);
-			if ($_SESSION['lang']=='fr') {
-				$sqlupdatequery="UPDATE tblContent Set `dtContentFr`='$newval' WHERE (`dtSite` LIKE '$pageselect'  AND dtType LIKE  '_TITLE_comment_')";
-			} else {
-				$sqlupdatequery="UPDATE tblContent Set `dtContentFr`='$newval' WHERE (`dtSite` LIKE '$pageselect'  AND dtType LIKE  '_TITLE_comment_')";
-			}
-			$result = mysql_query($sqlupdatequery);
-		}
-		if(isset($_POST["hidden_TITLE_first_"]))
-		{
-			$newval=$_POST["hidden_TITLE_first_"];
-			if (strpos($newval,'<!--')>=0) { $newval=substr_replace($newval,'',strpos($newval,'<!--')); }
-			$newval=addslashes($newval);
-			if ($_SESSION['lang']=='fr') {
-				$sqlupdatequery="UPDATE tblContent Set `dtContentFr`='$newval' WHERE (`dtSite` LIKE '$pageselect'  AND dtType LIKE  '_TITLE_first_')";
-			} else {
-				$sqlupdatequery="UPDATE tblContent Set `dtContentLu`='$newval' WHERE (`dtSite` LIKE '$pageselect'  AND dtType LIKE  '_TITLE_first_')";
-			}
-			$result = mysql_query($sqlupdatequery);
-		}
 		if(isset($_POST["hidden_CONTENT_first_"]))
 		{
 			$newval=$_POST["hidden_CONTENT_first_"];
@@ -123,18 +96,6 @@
 				$sqlupdatequery="UPDATE tblContent Set `dtContentFr`='$newval' WHERE (`dtSite` LIKE '$pageselect'  AND dtType LIKE  '_CONTENT_first_')";
 			} else {
 				$sqlupdatequery="UPDATE tblContent Set `dtContentLu`='$newval' WHERE (`dtSite` LIKE '$pageselect'  AND dtType LIKE  '_CONTENT_first_')";
-			}
-			$result = mysql_query($sqlupdatequery);
-		}
-		if(isset($_POST["hidden_TITLE_second_"]))
-		{
-			$newval=$_POST["hidden_TITLE_second_"];
-			if (strpos($newval,'<!--')>=0) { $newval=substr_replace($newval,'',strpos($newval,'<!--')); }
-			$newval=addslashes($newval);
-			if ($_SESSION['lang']=='fr') {
-				$sqlupdatequery="UPDATE tblContent Set `dtContentFr`='$newval' WHERE (`dtSite` LIKE '$pageselect'  AND dtType LIKE  '_TITLE_second_')";
-			} else {
-				$sqlupdatequery="UPDATE tblContent Set `dtContentLu`='$newval' WHERE (`dtSite` LIKE '$pageselect'  AND dtType LIKE  '_TITLE_second_')";
 			}
 			$result = mysql_query($sqlupdatequery);
 		}
@@ -158,27 +119,15 @@
 		if ($_SESSION['lang']=='fr') {
 			$result = mysql_query("SELECT dtContentFr FROM tblContent WHERE dtSite LIKE '$pageselect' AND dtType LIKE  '_TITLE_big_'");
 			$title_big = mysql_fetch_array($result);
-			$result = mysql_query("SELECT dtContentFr FROM tblContent WHERE dtSite LIKE '$pageselect' AND dtType LIKE  '_TITLE_comment_'");
-			$title_comm = mysql_fetch_array($result);
-			$result = mysql_query("SELECT dtContentFr FROM tblContent WHERE dtSite LIKE '$pageselect' AND dtType LIKE  '_TITLE_first_'");
-			$title_tifi = mysql_fetch_array($result);
 			$result = mysql_query("SELECT dtContentFr FROM tblContent WHERE dtSite LIKE '$pageselect' AND dtType LIKE  '_CONTENT_first_'");
 			$title_cofi = mysql_fetch_array($result);
-			$result = mysql_query("SELECT dtContentFr FROM tblContent WHERE dtSite LIKE '$pageselect' AND dtType LIKE  '_TITLE_second_'");
-			$title_tise = mysql_fetch_array($result);
 			$result = mysql_query("SELECT dtContentFr FROM tblContent WHERE dtSite LIKE '$pageselect' AND dtType LIKE  '_CONTENT_second_'");
 			$title_cose = mysql_fetch_array($result);
 		} else {
 			$result = mysql_query("SELECT dtContentLu FROM tblContent WHERE dtSite LIKE '$pageselect' AND dtType LIKE  '_TITLE_big_'");
 			$title_big = mysql_fetch_array($result);
-			$result = mysql_query("SELECT dtContentLu FROM tblContent WHERE dtSite LIKE '$pageselect' AND dtType LIKE  '_TITLE_comment_'");
-			$title_comm = mysql_fetch_array($result);
-			$result = mysql_query("SELECT dtContentLu FROM tblContent WHERE dtSite LIKE '$pageselect' AND dtType LIKE  '_TITLE_first_'");
-			$title_tifi = mysql_fetch_array($result);
 			$result = mysql_query("SELECT dtContentLu FROM tblContent WHERE dtSite LIKE '$pageselect' AND dtType LIKE  '_CONTENT_first_'");
 			$title_cofi = mysql_fetch_array($result);
-			$result = mysql_query("SELECT dtContentLu FROM tblContent WHERE dtSite LIKE '$pageselect' AND dtType LIKE  '_TITLE_second_'");
-			$title_tise = mysql_fetch_array($result);
 			$result = mysql_query("SELECT dtContentLu FROM tblContent WHERE dtSite LIKE '$pageselect' AND dtType LIKE  '_CONTENT_second_'");
 			$title_cose = mysql_fetch_array($result);
 		}
@@ -198,24 +147,18 @@
 		?>
 		<form action="page.php?page=<? echo $_GET["page"];?>" method="POST" name="editform">
 			<div contenteditable="true" id="_TITLE_big_"><?php echo $title_big[0]; ?><!-- _TITLE_big_ --></div>
-			<div  contenteditable="true" id="_TITLE_comment_"><?php echo $title_comm[0]; ?><!-- _TITLE_comment_ --></div>
 			<div class="row">
 				<div class="columns four">				
-					<div contenteditable="true" id="_TITLE_second_"><?php echo $title_tise[0]; ?><!-- _TITLE_second_ --></div>
 					<div contenteditable="true" id="_CONTENT_second_"><?php echo $title_cose[0]; ?><!-- _CONTENT_second_ --></div>
 				</div>
 				<div class="columns eight">
-					<div contenteditable="true" id="_TITLE_first_"><?php echo $title_tifi[0]; ?><!-- _TITLE_first_ --></div>
 					<div contenteditable="true" id="_CONTENT_first_"><?php echo $title_cofi[0]; ?><!-- _CONTENT_first_ --></div>
 				</div>
 			</div>
 			<!-- SAVE BUTTON -->
 			<div class="SaveButton"><input type="button" value="Save" onclick="Save()"></div>
 			<input type="hidden" id="hidden_TITLE_big_" name="hidden_TITLE_big_">
-			<input type="hidden" id="hidden_TITLE_comment_" name="hidden_TITLE_comment_">
-			<input type="hidden" id="hidden_TITLE_first_" name="hidden_TITLE_first_">
 			<input type="hidden" id="hidden_CONTENT_first_" name="hidden_CONTENT_first_">
-			<input type="hidden" id="hidden_TITLE_second_" name="hidden_TITLE_second_">
 			<input type="hidden" id="hidden_CONTENT_second_" name="hidden_CONTENT_second_">
 		</form>
 		
@@ -229,17 +172,10 @@
 		?>
 			<div><?php echo $title_big[0]; ?><!-- _TITLE_big_ h1--></div>
 			<div class="row">
-				<div class="center columns four"><?php echo $reclamefield; ?><!-- _TITLE_second_ h2--></div>
-				<div class="center columns eight"><?php echo $title_comm[0]; ?><!-- _TITLE_comment_ p--></div>
-			</div>
-			<div class="row">
 				<div class="columns four">
-					
 					<div><?php echo $titler_second; ?><!-- _CONTENT_second_ p--></div>
 				</div>
 				<div class="columns eight">
-
-					<div><?php echo $title_tifi[0]; ?><!-- _TITLE_first_ h2--></div>
 					<div><?php echo $title_cofi[0]; ?><!-- _CONTENT_first_ p--></div>
 				</div>
 			</div>
