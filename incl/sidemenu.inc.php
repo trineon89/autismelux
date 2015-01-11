@@ -15,6 +15,9 @@ if(isset($_GET["page"]))
 		$arr_notreass=array("Notre association", "about", "historique", "cons_admin", "organigramme", "equipe", "objectifs", "valeurs", "usagers", "partenaires", "admissions");
 		$arr_autisme=array("autisme", "autismewhat", "charte", "pec", "methodeseduc");
 		$arr_services=array("services", "hebergement", "hebergement#foyer1", "hebergement#foyer2", "cdj", "consult", "ses", "ateliers", "atelier_couture", "atelier_ceramique", "atelier_papier", "atelier_jardinage", "atelier_buanderie", "atelier_imprimerie", "atelier_backoffice", "atelier_info-media", "atelier_cuisine", "atelier_confiserie", "sfp", "jobcoach", "cia", "sia", "cdl", "sad", "sc");
+		$arr_heberg=array("hebergement", "hebergement#foyer1", "hebergement#foyer2");
+		$arr_atelier=array("ateliers", "atelier_couture", "atelier_ceramique", "atelier_papier", "atelier_jardinage", "atelier_buanderie", "atelier_imprimerie", "atelier_backoffice", "atelier_info-media", "atelier_cuisine", "atelier_confiserie");
+		$arr_cia=array("cia", "sia", "cdl", "sad", "sc");
 		$arr_produits=array("nosproduits", "artisanal", "infomedia", "pdb");
 		$arr_contact=array("contact");
 	?>
@@ -56,7 +59,7 @@ if(isset($_GET["page"]))
 		<li><div class="pseudosel"><a href="page.php?page=services">Nos services</a></div>
 			<ul>
 				<li><a href="page.php?page=hebergement">Hébergement</a>
-					<? if(isset($_GET["page"])) { if($_GET["page"]=="hebergement") { ?>
+					<? if(isset($_GET["page"])) { if(in_array($_GET["page"],$arr_heberg)) { ?>
 					<ul>
 						<li><a href="page.php?page=hebergement#foyer1">Foyer 1</a></li>
 						<li><a href="page.php?page=hebergement#foyer2">Foyer 2</a></li>
@@ -67,7 +70,7 @@ if(isset($_GET["page"]))
 				<li><a href="page.php?page=consult">Consultation</a></li>
 				<li><a href="page.php?page=ses">Soins et santé</a></li>
 				<li><a href="page.php?page=ateliers">Ateliers</a>
-				<? if(isset($_GET["page"])) { if($_GET["page"]=="ateliers") { ?>
+				<? if(isset($_GET["page"])) { if(in_array($_GET["page"],$arr_atelier)) { ?>
 					<ul>
 						<li><a href="page.php?page=atelier_couture">Couture créative</a></li>
 						<li><a href="page.php?page=atelier_ceramique">Ceramique</a></li>
@@ -84,8 +87,8 @@ if(isset($_GET["page"]))
 				</li>
 				<li><a href="page.php?page=sfp">SFP</a></li>
 				<li><a href="page.php?page=jobcoach">Jobcoach</a></li>
-				<li><a href="page.php?page=cia">CIA</a><a href="page.php?page=cia&editable">**</a>
-				<? if(isset($_GET["page"])) { if($_GET["page"]=="cia") { ?>	
+				<li><a href="page.php?page=cia">CIA</a>
+				<? if(isset($_GET["page"])) { if(in_array($_GET["page"],$arr_cia)) { ?>	
 					<ul>
 						<li><a href="page.php?page=sia">SIA</a></li>
 						<li><a href="page.php?page=cdl">CDL</a></li>

@@ -139,19 +139,24 @@
 		$result = mysql_query($sqlupdatequery);
 		$countlines = mysql_fetch_row($result);
 		if($countlines[0]<=0) {
-			?><h2 style="text-align:center;">WHOOPS!</h2><p style="text-align:center;">Cette page n'est pas encore accessible.</p><?
-		}
+			$notfound=true;
+		} else { $notfound=false; }
 		
 		
 	if($editable) {
 		?>
 		<form action="page.php?page=<? echo $_GET["page"];?>" method="POST" name="editform">
-			<div contenteditable="true" id="_TITLE_big_"><?php echo $title_big[0]; ?><!-- _TITLE_big_ --></div>
+			<div class="row">
+				<div class="columns four">&nbsp;</div>
+				<div class="columns eight">
+				<div contenteditable="true" id="_TITLE_big_"><?php echo $title_big[0]; ?><!-- _TITLE_big_ --></div>
+				</div>
+			</div>
 			<div class="row">
 				<div class="columns four">				
 					<div contenteditable="true" id="_CONTENT_second_"><?php echo $title_cose[0]; ?><!-- _CONTENT_second_ --></div>
 				</div>
-				<div class="columns eight">
+				
 					<div contenteditable="true" id="_CONTENT_first_"><?php echo $title_cofi[0]; ?><!-- _CONTENT_first_ --></div>
 				</div>
 			</div>
@@ -170,7 +175,15 @@
 			$reclamefield=$title_tise[0];
 			$reclamefield=is_reclame($reclamefield);
 		?>
-			<div><?php echo $title_big[0]; ?><!-- _TITLE_big_ h1--></div>
+			<div class="row">
+				<div class="columns four">&nbsp;</div>
+				<div class="columns eight">
+					<?php echo $title_big[0]; 
+					if($notfound==true) {
+					?><h1>WHOOPS!</h1> <? } ?>
+					<!-- _TITLE_big_ h1-->
+				</div>
+			</div>
 			<div class="row">
 				<div class="columns four">
 					<div>
@@ -180,7 +193,10 @@
 					?><!-- _CONTENT_second_ p--></div>
 				</div>
 				<div class="columns eight">
-					<div><?php echo $title_cofi[0]; ?><!-- _CONTENT_first_ p--></div>
+					<div><?php echo $title_cofi[0]; 
+					if($notfound==true) {
+					?><p>Cette page n'est pas encore accessible.</p><? }
+					?><!-- _CONTENT_first_ p--></div>
 				</div>
 			</div>
 		<?
