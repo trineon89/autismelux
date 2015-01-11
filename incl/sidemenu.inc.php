@@ -20,11 +20,12 @@ if(isset($_GET["page"]))
 		$arr_cia=array("cia", "sia", "cdl", "sad", "sc");
 		$arr_produits=array("nosproduits", "artisanal", "infomedia", "pdb");
 		$arr_contact=array("contact");
+		$arr_don=array("don", "benevol", "slogan");
 	?>
 	<? 
 	if(in_array($_GET["page"], $arr_notreass)) 
 	{ ?>
-		<li><div class="pseudosel"><a href="#">Notre association</a></div>
+		<li><div class="pseudosel"><a href="page.php?page=about">Notre association</a></div>
 			<ul>
 				<li><a href="page.php?page=about">Qui sommes-nous?</a></li>
 				<li><a href="page.php?page=historique">Historique</a></li>
@@ -39,6 +40,17 @@ if(isset($_GET["page"]))
 			</ul>
 		</li>
 		<div class="breaksidenav"></div>
+	<?
+	}
+	if(in_array($_GET["page"], $arr_don)) 
+	{ ?>
+			<li><div class="pseudosel"><a href="#">Bénévol</a></div>
+			<ul>
+				<li><a href="page.php?page=benevol">Devenir Bénévol</a></li>
+				<li><a href="page.php?page=don">Faites un don</a></li>
+				<li><a href="page.php?page=slogan">Ecoute, compétence, dynamisme</a></li>
+			</ul>
+			</li>
 	<?
 	}
 	if(in_array($_GET["page"], $arr_autisme)) 
