@@ -32,6 +32,7 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/footer_min.css">
 	<link rel="stylesheet" href="css/fontawesome/css/font-awesome.min.css">
+	<?php if($_GET["page"]=="ateliers") { echo "<link rel=\"stylesheet\" href=\"css/produit-index.css\">"; } ?>
 	<!--<link rel="stylesheet" href="css/menu.css">-->
     <meta name="robots" content="noindex" />   
 </head>
@@ -156,7 +157,7 @@
 				<div class="columns four">				
 					<div contenteditable="true" id="_CONTENT_second_"><?php echo $title_cose[0]; ?><!-- _CONTENT_second_ --></div>
 				</div>
-				
+				<div class="columns eight">
 					<div contenteditable="true" id="_CONTENT_first_"><?php echo $title_cofi[0]; ?><!-- _CONTENT_first_ --></div>
 				</div>
 			</div>
@@ -193,7 +194,12 @@
 					?><!-- _CONTENT_second_ p--></div>
 				</div>
 				<div class="columns eight">
-					<div><?php echo $title_cofi[0]; 
+					<div>
+						<style>
+							.listing { max-width:100%; display:block; }
+							.listing li { width:21%; display:inline-block; text-align:center; padding:10px;font-size:1.4em; }
+						</style>
+					<?php echo $title_cofi[0]; 
 					if($notfound==true) {
 					?><p>Cette page n'est pas encore accessible.</p><? }
 					?><!-- _CONTENT_first_ p--></div>
