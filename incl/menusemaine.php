@@ -43,8 +43,8 @@
 		<div class="menu-semaine">
 			<p class="date">Liste Allergènes</p>
 			<div class="amenu">1. Arachide</div>
-			<div class="amenu">2. Celeri</div>
-			<div class="amenu">3. Crustacées</div>
+			<div class="amenu">2. Céléri</div>
+			<div class="amenu">3. Crustacés</div>
 			<div class="amenu">4. Fruits à coque</div>
 			<div class="amenu">5. Gluten</div>
 			<div class="amenu">6. Lait/Lactose</div>
