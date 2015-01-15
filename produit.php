@@ -185,7 +185,7 @@
 ?>
 <article class="rigsingle">
 		<div id="leftsingle">
-			<p class="back fa fa-chevron-left"><a style="font-family:sans-serif;" href="produit.php?class=<? echo $classe; ?>">Retour</a></p>
+			<p class="back fa fa-chevron-left"><a style="font-family:'Open Sans', sans-serif;" href="produit.php?class=<? echo $classe; ?>">Retour</a></p>
 			<img id="zoom_01" src="<?php echo $prodrow[dtImage]; ?>" data-zoom-image="<?php echo $prodrow[dtImage]; ?>_large.jpg"  />
 			<div id="gal1">
 				<a href="#" data-image="<?php echo $prodrow[dtImage]; ?>" data-zoom-image="<?php echo $prodrow[dtImage]; ?>_large.jpg"> 
