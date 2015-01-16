@@ -191,6 +191,14 @@ h1, h2, h3,h4,h5 {
 ###	     FRONTPAGE         ###
 ##############################
 */
+#backgroundstartpage {
+	float:left;
+	height:320px;
+	width:598px;
+	background-color: #EFF8FB;
+	position:relative;
+}
+
 .slogan:hover { line-height:normal;}
 #mainself {
 	margin-top:2.5%;
@@ -220,7 +228,10 @@ h1, h2, h3,h4,h5 {
 	background:url("../img/devenir_benevol.png") no-repeat left top;
 	width:297px;
 	height:140px;
-	float:left;
+	/*float:left;*/
+	position:absolute;
+	bottom:0px;
+	left:0px;
 	background-color: #EFF8FB;
 	border: 1px solid #EFF8FB;
 	border-bottom: 1px solid #ffffff;
@@ -228,7 +239,10 @@ h1, h2, h3,h4,h5 {
 #don {
 	width:297px;
 	height:140px;
-	float:left;
+	/*float:left;*/
+	position:absolute;
+	top:0px;
+	right:0px;
 	background-color: #EFF8FB;
 	border: 1px solid #EFF8FB;
     border-left: 1px solid #ffffff;
@@ -271,28 +285,41 @@ h1, h2, h3,h4,h5 {
 }
 #ecoute {
 	width:596px;
-	height:137px;
+	height:134px;
 	float:left;
 	background-color: #EFF8FB;
 	border: 1px solid #EFF8FB;
-	font-size: 36px;
+	font-size: 45px;
 	font-family: 'Raleway', sans-serif;
 	color: rgb(0, 0, 0);
 	text-align: left;
-	-webkit-box-shadow: 0px 12px 8px 0px rgba(220, 220, 220, 1);
+
+	/*-webkit-box-shadow: 0px 12px 8px 0px rgba(220, 220, 220, 1);
 	-moz-box-shadow:    0px 12px 8px 0px rgba(220, 220, 220, 1);
-	box-shadow:         0px 12px 8px 0px rgba(220, 220, 220, 1);
+	box-shadow:         0px 12px 8px 0px rgba(220, 220, 220, 1);*/
 }
 #ecoute_p {	
  margin:3px 20px 0 20px;
+ font-family: 'Raleway', sans-serif;
+ 	position:absolute;
+ top:0px;
+ left:0px;
  text-align: left;
  }
 #competence {
- margin:3px 110px 0 20px;
+ margin:0px 110px 0 20px;
+ font-family: 'Raleway', sans-serif;
+ 	position:absolute;
+width:100%;
+top:139px;
  text-align: center;
 }
 #dynamisme {
  margin:3px 20px 0 20px;
+ font-family: 'Raleway', sans-serif;
+ 	position:absolute;
+	right:0px;
+	bottom:0px;
  text-align: right;
 }
 
