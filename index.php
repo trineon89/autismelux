@@ -36,7 +36,7 @@
 				<p id="virementcode">BCEE LU99 0000 1111 2222 3333<br/>BGLLUL LU12 1234 5678 9101 1013</p>
 			</div> <!-- background Donenconfiance -->
 			</article></a>
-			<a href="page.php?page=slogan" class="slogan"><article id="ecoute"><p id="ecoute_p">Ecoute</p><p id="competence">Compétence</p><p id="dynamisme">Dynamisme</p></article></a>
+			<a href="page.php?page=slogan" class="slogan"><article id="ecoute"><span id="ecoute_p">Ecoute &#124; </span><span id="competence">Compétence &#124; </span><span id="dynamisme">Dynamisme</span></article></a>
 	</div>
 	</section>
 	<div class="clearfloat">
