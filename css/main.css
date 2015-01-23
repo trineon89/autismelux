@@ -457,6 +457,9 @@ h1 {
 ###	        FOOTER         ###
 ##############################
 */
+#footer {
+	font-size: 1.1em;
+}
 #footerback {
 	background:url("../img/footer.png") no-repeat left top;
 	height: 45px;
@@ -466,7 +469,7 @@ h1 {
 .orangecontainer {
 	
 	margin-top:45px;
-	height: 175px;
+	height: 220px;
 	width: 199px;
 	float:left;
 	z-index:0;
@@ -512,6 +515,14 @@ border-left: 0px solid #fff;
 	text-align:center;
 	margin: 10px 0 10px;
 }
+.agendaheader {
+	height: 45px;
+	font-size: 10pt;
+	padding-top:50px;
+	font-weight: bold;
+	text-align:center;
+	margin: 10px 0 10px;
+}
 #footerback li {
 	display:inline-block;
 	text-align:center;
@@ -530,7 +541,7 @@ border-left: 0px solid #fff;
 	font-family: 'Open Sans', sans-serif;
 	text-align:center;
 	color: #000;
-	font-size: 9pt;
+	font-size: 15px;
 	margin: 2px 2px 2px 2px;
 }
 #footerback footer {
@@ -549,7 +560,7 @@ border-left: 0px solid #fff;
 	
 }
 #footerback article {
-	height:220px;
+	height:265px;
 }
 
 .SaveButton {

@@ -11,7 +11,7 @@
 				</div>
 				<div class="orangecontainer"><li><a href="page.php?page=agenda">Agenda</a></li>
 				<article>
-						<p class="oheader">no prochains rendez-vous</p>
+						<p class="agendaheader">nos prochains rendez-vous</p>
 						<p>21. septembre - Maart</p>
 							<p>Schlassmaart à Koerich vous invite à visiter.</p>
 						<p>23. decembre - Fête</p>

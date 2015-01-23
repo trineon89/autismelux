@@ -9,7 +9,7 @@
 		transition: 1s;
 	}
 	.orangecontainer {
-		height:175px;
+		height:220px;
 	}
 	/*
 	.orangecontainer:hover > article,footer {
@@ -21,7 +21,7 @@
 	}
 	*/
 	#footer:hover {
-		height:222px;
+		height:266px;
 		transition: 1s;
 	}
 	.orangecontainer article {
