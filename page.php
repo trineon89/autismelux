@@ -53,7 +53,7 @@
 			break;
 			case 'agenda':
 				/* ### AGENDA PAGE ### */
-				echo "agenda";
+				include('incl/calendar_mod.php');
 			break;
 			case 'media':
 				/* ### MEDIA PAGE ### */

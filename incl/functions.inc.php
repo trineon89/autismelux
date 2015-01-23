@@ -176,4 +176,18 @@
 		}
 		return $menu;
 	}
+	
+	function get_agenda_mainpage()
+	{
+		$sql = "SELECT * FROM `tblevent_calendar` WHERE `event_date` > NOW() LIMIT 2;";
+		$result = mysql_query($sql) or die(mysql_error()); $resulthtml='';
+		if(mysql_num_rows($result) > 0) {
+			
+			while($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
+				$resulthtml.="<a href=\"\"><i class=\"fa fa-calendar\"></i><p class=\"agendatitle\">".$row[title]."</p></a>";
+				$resulthtml.="<p class=\"agendap\">".substr($row[description],0,40)."...</p>";
+			}
+		}
+		RETURN $resulthtml;
+	}
 ?>

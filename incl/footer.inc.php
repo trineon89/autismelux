@@ -12,10 +12,14 @@
 				<div class="orangecontainer"><li><a href="page.php?page=agenda">Agenda</a></li>
 				<article>
 						<p class="agendaheader">nos prochains rendez-vous</p>
-						<p>21. septembre - Maart</p>
+						<?php
+							require_once("functions.inc.php");
+							echo get_agenda_mainpage();
+						?>
+						<!--<p>21. septembre - Maart</p>
 							<p>Schlassmaart à Koerich vous invite à visiter.</p>
 						<p>23. decembre - Fête</p>
-							<p>Une grande fête au coeur du luxembourg</p>
+							<p>Une grande fête au coeur du luxembourg</p>-->
 						<footer><a href="page.php?page=agenda">voir tout l'agenda</a></footer>
 					</article>
 				</div>
