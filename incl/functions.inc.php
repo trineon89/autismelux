@@ -1,4 +1,5 @@
 <?php
+	error_reporting(0);
 	require_once('config.inc.php');
 	function get_Category_tags($classe) {
 		$sqlquery="SELECT * FROM tblCategory WHERE (`dtClasse` LIKE '$classe')";
@@ -182,9 +183,8 @@
 		$sql = "SELECT * FROM `tblevent_calendar` WHERE `event_date` > NOW() LIMIT 2;";
 		$result = mysql_query($sql) or die(mysql_error()); $resulthtml='';
 		if(mysql_num_rows($result) > 0) {
-			
 			while($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
-				$resulthtml.="<a href=\"\"><i class=\"fa fa-calendar\"></i><p class=\"agendatitle\">".$row[title]."</p></a>";
+				$resulthtml.="<a href=\"page.php?page=agenda&quickjump=yes&date=$row[event_date]\"><i class=\"fa fa-calendar\"></i><p class=\"agendatitle\">".$row[title]."</p></a>";
 				$resulthtml.="<p class=\"agendap\">".substr($row[description],0,40)."...</p>";
 			}
 		}

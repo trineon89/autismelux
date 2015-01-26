@@ -35,7 +35,10 @@ function LoadMonth(month, year) {
 }
 
 function LoadEvents(date) {
+	var el = document.getElementById("Events");
 	ajaxpage("incl/events.php?date="+date, "Events")
+	if ( el.style.display == 'inline-block' ) {	el.style.display = 'none';}
+	else {el.style.display = 'inline-block';}
 }
 
 LoadMonth();

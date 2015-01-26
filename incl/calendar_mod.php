@@ -7,11 +7,22 @@
 </head>
 
 <body>
-
+<h2>Agenda</h2>
 <div id="Calendar"> </div>
 <div id="Events"> </div>
 <script language="javascript" src="incl/calendar.js"></script>
-
+<?php
+	if ($_GET["quickjump"]=="yes")
+	{
+		$date=$_GET["date"];
+		$fields = explode('-', $_GET["date"]);
+		$selday=$fields[2];
+		$selmonth=$fields[1];
+		$selyear=$fields[0];
+		echo "<script>LoadMonth('$selmonth', '$selyear')</script>";
+		echo "<script>LoadEvents('$date')</script>";
+	}
+?>
 
 </body>
 </html>

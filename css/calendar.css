@@ -1,10 +1,12 @@
 #Calendar {
-	width:300px;	
+	width:300px;
+	display:inline-block;
+	margin: 10px 10px 5px 10px;
 }
 
 #Calendar td {
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:12px;
+	font-family:'Open Sans', sans-serif;
+	font-size:16px;
 }
 
 #Calendar .cMonth {
@@ -49,17 +51,22 @@
 
 
 #Events {
-	width:300px;	
+	width:300px;
+	display:none;
+	background-color:#EEE;
+	padding: 10px 20px 20px 20px;
+	position:absolute;
+	margin: 10px 10px 5px 10px;
 }
 
 #Events h2 {
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:12px;
+	font-family:'Open Sans', sans-serif;
+	font-size:16px;
 	font-weight:bold;
 	margin-top:10px;
 }
 
 #Events span {
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:12px;
+	font-family:'Open Sans', sans-serif;
+	font-size:16px;
 }

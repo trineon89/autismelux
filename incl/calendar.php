@@ -39,13 +39,13 @@ if ($next_month<10) $next_month = '0'.$next_month;
       <td class="mNav"><a href="javascript:LoadMonth('<?php echo $next_month; ?>', '<?php echo $next_year; ?>')">&gt;&gt;</a></td>
   </tr>
   <tr>
+      <td class="wDays">L</td>
       <td class="wDays">M</td>
-      <td class="wDays">T</td>
-      <td class="wDays">W</td>
-      <td class="wDays">T</td>
-      <td class="wDays">F</td>
+      <td class="wDays">M</td>
+      <td class="wDays">J</td>
+      <td class="wDays">V</td>
       <td class="wDays">S</td>
-      <td class="wDays">S</td>
+      <td class="wDays">D</td>
   </tr>
 <?php 
 $first_day_timestamp = mktime(0,0,0,$cMonth,1,$cYear); // time stamp for first day of the month used to calculate 

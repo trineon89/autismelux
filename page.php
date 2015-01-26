@@ -3,6 +3,7 @@
 	if (!isset($_SESSION['lang'])) {
 		$_SESSION['lang']='fr';
 	}
+	require_once("incl/functions.inc.php");
 	// log php errors
 @ini_set('log_errors','On'); // enable or disable php error logging (use 'On' or 'Off')
 @ini_set('display_errors','Off'); // enable or disable public display of errors (use 'On' or 'Off')
