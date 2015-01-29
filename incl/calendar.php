@@ -39,13 +39,13 @@ if ($next_month<10) $next_month = '0'.$next_month;
       <td class="mNav"><a href="javascript:LoadMonth('<?php echo $next_month; ?>', '<?php echo $next_year; ?>')">&gt;&gt;</a></td>
   </tr>
   <tr>
-      <td class="wDays">L</td>
-      <td class="wDays">M</td>
-      <td class="wDays">M</td>
-      <td class="wDays">J</td>
-      <td class="wDays">V</td>
-      <td class="wDays">S</td>
-      <td class="wDays">D</td>
+      <th class="wDays">L</th>
+      <th class="wDays">M</th>
+      <th class="wDays">M</th>
+      <th class="wDays">J</th>
+      <th class="wDays">V</th>
+      <th class="wDays">S</th>
+      <th class="wDays">D</th>
   </tr>
 <?php 
 $first_day_timestamp = mktime(0,0,0,$cMonth,1,$cYear); // time stamp for first day of the month used to calculate 
@@ -70,9 +70,15 @@ for ($i=0; $i<($maxday+$startday); $i++) {
 		$css='noevent'; 		
 		$click = '';
 	}
-	
-	echo "<td class='".$css."'".$click.">". $current_day . "</td>";
-	
+	$thisday=date("d");
+	$thismonth=date("m");
+	$thisyear=date("Y");
+	if (($current_day==$thisday) && ($cMonth==$thismonth) && ($cYear==$thisyear))
+	{
+		echo "<td class='".$css." today'".$click."><a>". $current_day . "</a></td>";
+	} else {
+		echo "<td class='".$css."'".$click."><a>". $current_day . "</a></td>";
+	}
 	if (($i % 7) == 6 ) echo "</tr>";
 }
 ?> 

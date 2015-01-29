@@ -1,12 +1,34 @@
+.calendarWrapper
+{
+    background-color: #4CCAEF;
+    padding: 10px;
+    display: inline-block;
+}
 #Calendar {
 	width:300px;
 	display:inline-block;
 	margin: 10px 10px 5px 10px;
+	position:static;
+	float:left;
+	background-color: #f2f2f2;
+	border: none !important;
 }
 
-#Calendar td {
+#Calendar td ,#Calendar th{
 	font-family:'Open Sans', sans-serif;
 	font-size:16px;
+	border-right: solid 1px #ddd;
+}
+#Calendar td:hover {
+	background-color: #f2f2f2;
+	-webkit-box-shadow: 1px 1px 8px 1px #8f8f8f;
+	box-shadow: 1px 1px 8px 1px #8f8f8f;
+	margin-left: -1px;
+	margin-top: -1px;
+	position: relative;
+}
+#Calendar tr td:last-child, #Calendar tr th:last-child {  
+    border-right: none;
 }
 
 #Calendar .cMonth {
@@ -26,21 +48,29 @@
 	background-color:#CCC;
 }
 
+#Calendar table tr{  
+    border-bottom: solid 1px #ddd;
+} 
+
+#Calendar tr:last-child td{  
+    border-bottom: none;
+}
+
 #Calendar table td a {
 	text-decoration:none;
 	color:#000;
 }
 
 #Calendar table td a:hover {
-	text-decoration:underline;
+	/*text-decoration:underline;*/
 }
-
 
 #Calendar .withevent {
 	text-align:center;
-	background-color:#CCC;
+	background-color:#25bae5;
 	color:#000;
 	cursor:pointer;
+	font-weight: bold;
 }
 
 #Calendar .noevent {
@@ -49,23 +79,48 @@
 	color:#000;
 }
 
+#Calendar .today {
+	background-color: #f2f2f2;
+	-webkit-box-shadow: 1px 1px 8px 1px #8f8f8f;
+	box-shadow: 1px 1px 8px 1px #8f8f8f;
+	border: 2px solid #f2f2f2;
+	margin-left: -1px;
+	margin-top: -1px;
+	position: relative;
+}
+
+#Calendar .today a {
+	color: #25bae5 !important;
+	font-weight: bold;
+	}
 
 #Events {
 	width:300px;
 	display:none;
 	background-color:#EEE;
 	padding: 10px 20px 20px 20px;
-	position:absolute;
+	position:static;
 	margin: 10px 10px 5px 10px;
 }
 
-#Events h2 {
+#Events .title {
 	font-family:'Open Sans', sans-serif;
+	float:left;
+	width:60%;
 	font-size:16px;
 	font-weight:bold;
 	margin-top:10px;
 }
-
+#Events .date {
+	width:40%;
+	font-family:'Open Sans', sans-serif;
+	float:right;
+	text-align:right;
+	font-size:14px;
+	font-weight:bold;
+	margin-top:12px;
+	margin-bottom:14px;
+}
 #Events span {
 	font-family:'Open Sans', sans-serif;
 	font-size:16px;

@@ -8,7 +8,9 @@
 
 <body>
 <h2>Agenda</h2>
-<div id="Calendar"> </div>
+<div class="calendarWrapper">
+	<div id="Calendar"> </div>
+</div>
 <div id="Events"> </div>
 <script language="javascript" src="incl/calendar.js"></script>
 <?php
