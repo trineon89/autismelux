@@ -1,3 +1,4 @@
+<a href="http://autisme-alpha.netty.lu/"><img src="/img/autisme_logo.png" width="5%"></a>
 <nav class="topnavigation">
 	<ul>
 		<li><a href="page.php?page=about">Notre association</a>
@@ -74,4 +75,3 @@
 		</li>
 	</ul>
 </nav>
-<a href="http://autisme-alpha.netty.lu/"><img src="/img/autisme_logo.png" width="5%"></a>

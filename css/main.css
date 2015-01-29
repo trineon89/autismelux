@@ -177,6 +177,37 @@ h1, h2, h3,h4,h5 {
 		width:100%;
 	}
 	#headerback {
+		z-index:1;
+		position:relative;
+		background-color:#233477;
+		background:url("../img/header.png") no-repeat left top;
+		margin: 0 0 10px 0;
+		-webkit-box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.3);
+		-moz-box-shadow:    0px 5px 6px 0px rgba(0, 0, 0, 0.3);
+		box-shadow:         0px 5px 6px 0px rgba(0, 0, 0, 0.3);
+	}
+	#headerback a img {
+		position:relative;
+		top: 5px;
+		left:2px;
+		width:84px;
+	}
+	#headerback:after {
+		content: "Autisme Luxembourg";
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-size:2em;
+		color:#fff;
+		line-height:85px;
+		vertical-align:top;
+		text-align:left;
+		position:absolute;
+		left:105px;
+		top:0px;
+		margin-top: .67em;
+		display: block;
+		width:250px;
+	}
+	.topnavigation {
 		display:none;
 	}
 }
