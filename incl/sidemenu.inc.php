@@ -11,7 +11,6 @@ if(isset($_GET["page"]))
 <nav class="sidenav">
 	<ul>
 	<?php 
-	@ini_set('display_errors','On');
 		$arr_notreass=array("Notre association", "about", "historique", "cons_admin", "organigramme", "equipe", "objectifs", "valeurs", "usagers", "partenaires", "admissions");
 		$arr_autisme=array("autisme", "autismewhat", "charte", "pec", "methodeseduc");
 		$arr_services=array("services", "hebergement", "hebergement#foyer1", "hebergement#foyer2", "cdj", "consult", "ses", "ateliers", "atelier_couture", "atelier_ceramique", "atelier_papier", "atelier_jardinage", "atelier_buanderie", "atelier_imprimerie", "atelier_backoffice", "atelier_info-media", "atelier_cuisine", "atelier_confiserie", "sfp", "jobcoach", "cia", "sia", "cdl", "sad", "sc");
@@ -21,8 +20,6 @@ if(isset($_GET["page"]))
 		$arr_produits=array("nosproduits", "artisanal", "infomedia", "pdb");
 		$arr_contact=array("contact");
 		$arr_don=array("don", "benevol", "slogan");
-	?>
-	<? 
 	if(in_array($_GET["page"], $arr_notreass)) 
 	{ ?>
 		<li><div class="pseudosel"><a href="page.php?page=about">Notre association</a></div>
@@ -44,7 +41,7 @@ if(isset($_GET["page"]))
 	}
 	if(in_array($_GET["page"], $arr_don)) 
 	{ ?>
-			<li><div class="pseudosel"><a href="#">Bénévol</a></div>
+			<li><div class="pseudosel"><a href="page.php?page=benevol">Bénévol</a></div>
 			<ul>
 				<li><a href="page.php?page=benevol">Devenir Bénévol</a></li>
 				<li><a href="page.php?page=don">Faites un don</a></li>

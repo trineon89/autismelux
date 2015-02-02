@@ -54,6 +54,9 @@ p {
 h1, h2, h3,h4,h5 {
 	font-family:'Open Sans', sans-serif;
 }
+table, td, th {
+	font-family:'Open Sans', sans-serif;
+}
 
 /* 
 ##############################
@@ -371,6 +374,8 @@ h1, h2, h3,h4,h5 {
 
 .container ol {
 	list-style:disc outside none; 
+	padding-left:0px;
+	font-family:'Open Sans', sans-serif;
 }
 
 .container ol li {
@@ -394,7 +399,7 @@ h1, h2, h3,h4,h5 {
 
 
 #page .container a, a:hover {	
-	color:black;
+	color:#374685; /*Darkblue*/
 	line-height:1.7em;
 	/*font-size:11px;*/
 }
@@ -482,7 +487,53 @@ h1 {
 	font-size: 24px;
 	color: #fff;
 }
+/* 
+##############################
+###	        VCARD          ###
+##############################
+*/
 
+.vcard {
+	font-family:'Open Sans', sans-serif;
+    padding: 0.4em 0.3em;
+	float:left;
+	margin-bottom:10px;
+	min-width:240px;
+}
+span.fn {
+	font-weight:bold;
+}
+.vcard a.url {
+    display: block;
+    height: 100%;
+    padding-left: 5px;
+    border-bottom: 1px solid gray;
+	font-family:'Open Sans Condensed', sans-serif;
+	font-weight:bold;
+}
+.vcard a.email {
+	padding-left:5px;
+}
+.vcard img.photo {
+	width:50px;
+	float:left;
+	padding-right:5px;
+	padding-bottom:5px;
+}
+.vcard.adr {
+    width: 90%;
+    margin: 10px auto;
+    padding: 5px 5px 5px 19px;
+    border-left: 4px solid gray;
+    border-right: 4px solid gray;
+}
+.vcard.adr.span {
+    font-style: italic;
+    padding: 0 0.3em;
+}
+.country-name:after {
+	content:"-";
+}
 /* 
 ##############################
 ###	        FOOTER         ###

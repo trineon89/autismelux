@@ -9,7 +9,7 @@
 	<body>
 		<div id="two-columns" class="grid-container">
 		<?php echo get_all_media() ?>
-			<!--<h2 style="margin-bottom:0px;">Infoautisme</h2>
+			<!--<h2 style="margin-bottom:0px;">Infoautisme</h2>		ADDING SCROLL LIST
 			<ul class="rig">
 				<li><img src="./img/upload/infoautisme/maquette01.jpg" /><p>Infoautisme 1</p></li>
 				<li><img src="./img/upload/infoautisme/maquette02.jpg" /></li>
