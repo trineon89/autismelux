@@ -88,7 +88,7 @@
 	
 	function get_all_media()
 	{
-		$sqlq="SELECT * FROM tblMedia ORDER BY dtCategory,dtTitle ASC";
+		$sqlq="SELECT * FROM tblMedia ORDER BY dtCategory,dtDate DESC";
 		$result = mysql_query($sqlq) or die(mysql_error());
 		if(mysql_num_rows($result) > 0)
 		{
@@ -98,12 +98,12 @@
 				{
 					$counti++;
 					$category=$roow[dtCategory];
-					$mediaresult="<h2 style=\"margin-bottom:0px;\">".$category."</h2><ul class=\"rig\">";
+					$mediaresult="<h2 style=\"margin-bottom:0px;\">".$category."</h2><div class=\"vert\"><ul class=\"vertimages\">";
 				}
 				$mediaresult.= "<li><img src=\".".$roow[dtImage]."\" /><p>".$roow[dtTitle]."</p></li>";
 				if($category<>$roow[dtCategory]) //change of category
 				{
-					echo "</ul>";
+					echo "</ul></div>";
 					$counti=0;
 				}
 			}

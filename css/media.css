@@ -56,6 +56,35 @@
 	ul.rig.columns-6 li {
 		width: 13.6%; /* this value + 2.5 should = 25% */
 	}
+	
+	.vert {
+		overflow:hidden;
+	}
+	
+	.vert ul {
+		margin: 0;
+		padding: 0;
+		list-style:none;
+		overflow: hidden;
+	}
+	.vert li {
+
+		float:left;
+		padding: 10px;
+		margin: 5px 10px 2px 10px;
+	}
+	.vert li img {
+		width: auto;
+		height: 125px;
+		margin: 0 0 -5px;
+	}
+	.vert li p {
+		font-size: .9em;
+		line-height: 1.5em;
+		margin:0;
+		color: #999;
+	}
+	
 }
 @media (max-width: 640px) {
 	ul.rig {
