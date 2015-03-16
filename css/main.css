@@ -18,7 +18,7 @@ body {
 }
 
 a, a:visited, a:link, a:link:active, a:visited:active {
-	color: #DDDDDD;
+	color: #2A59E5;
 	text-decoration: none;
 	transition: all 0.2s ease;
 }
@@ -534,6 +534,7 @@ span.fn {
 .country-name:after {
 	content:"-";
 }
+
 /* 
 ##############################
 ###	        FOOTER         ###

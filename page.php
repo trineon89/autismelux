@@ -178,6 +178,16 @@
 			$reclamefield=is_reclame($reclamefield);
 		?>
 			<div class="row">
+			<?php if (strpos($_GET['page'],'atelier') !== false){ ?>
+				<div class="columns four"><img alt="" data-cke-saved-src="http://autisme-alpha.netty.lu/img/upload/dreckerei_thumb.png" src="http://autisme-alpha.netty.lu/img/upload/dreckerei_thumb.png" style="height:200px; width:200px;margin:10px;"></div>
+				<div class="columns eight">
+					<?php //echo $title_big[0]; 
+					require_once('slider.html');
+					if($notfound==true) {
+					?><h1>WHOOPS!</h1> <? } ?>
+					<!-- _TITLE_big_ h1-->
+				</div>
+			<? } else { ?>
 				<div class="columns four">&nbsp;</div>
 				<div class="columns eight">
 					<?php echo $title_big[0]; 
@@ -185,6 +195,7 @@
 					?><h1>WHOOPS!</h1> <? } ?>
 					<!-- _TITLE_big_ h1-->
 				</div>
+			<?	} ?>
 			</div>
 			<div class="row">
 				<div class="columns four">
