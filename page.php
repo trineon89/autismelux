@@ -74,6 +74,10 @@
 				/* ### PRODUIT ACTUELLE PAGE ### */
 				echo "prodact";
 			break;
+			case 'locate' :
+				/* ### LOCATE / MAP PAGE ### */;
+				include('incl/locate.inc.php');
+			break;
 			default:
 		
 		/* ### DEFAULT PAGES ### */

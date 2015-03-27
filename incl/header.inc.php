@@ -69,8 +69,8 @@
 		</li>
 		<li><a href="contact.php">Contact</a>
 			<ul>
-				<li><a href="contact.php#map">Nous contacter</a></li>
-				<li><a href="contact.php#map">Nous localisez</a></li>
+				<li><a href="contact.php">Nous contacter</a></li>
+				<li><a href="page.php?page=locate">Nous localisez</a></li>
 			</ul>
 		</li>
 	</ul>
