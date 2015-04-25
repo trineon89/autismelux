@@ -252,13 +252,16 @@ table, td, th {
 }
 #benevol {
 	position:relative;
-	background:url("../img/devenir_benevol.png") no-repeat left top;
-	width:297px;
+	background:url("../img/devenez-benevol.png") no-repeat left top;
+	width:595px;
 	height:140px;
 	float:left;
 	background-color: #EFF8FB;
 	border: 1px solid #EFF8FB;
 	border-bottom: 1px solid #ffffff;
+	-webkit-box-shadow: 0px 12px 8px 0px rgba(220, 220, 220, 1);
+	-moz-box-shadow:    0px 12px 8px 0px rgba(220, 220, 220, 1);
+	box-shadow:         0px 12px 8px 0px rgba(220, 220, 220, 1);
 }
 #benevol:hover:after {
 	content: ' ';
@@ -271,13 +274,17 @@ table, td, th {
 }
 #don {
 	position:relative;
-	width:297px;
+	width:595px;
 	height:140px;
 	float:left;
+	background:url("../img/don.png") no-repeat left top;
 	background-color: #EFF8FB;
 	border: 1px solid #EFF8FB;
     border-left: 1px solid #ffffff;
 	border-bottom: 1px solid #ffffff;
+	-webkit-box-shadow: 0px 12px 8px 0px rgba(220, 220, 220, 1);
+	-moz-box-shadow:    0px 12px 8px 0px rgba(220, 220, 220, 1);
+	box-shadow:         0px 12px 8px 0px rgba(220, 220, 220, 1);
 	
 }
 #don:hover:after {
@@ -305,6 +312,9 @@ table, td, th {
   font-weight: 600;
 }
 #virement {
+  position: relative;
+  top: 60px;
+  left: -150px;
   font-size: 23px;
   font-family: "Open Sans Condensed";
   color: rgb(0, 0, 0);
@@ -315,6 +325,9 @@ table, td, th {
 }
 
 #virementcode {
+  position: relative;
+  top: 40px;
+  left: -150px;
   font-size: 15px;
   font-family: "Open Sans Condensed";
   color: rgb(0, 0, 0);
@@ -323,15 +336,22 @@ table, td, th {
   margin-top:12px;
   margin-right:5px;
 }
+.secondmain {
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
+	margin-left: 88px;
+	height: 140px;
+	width: 1195px;
+}
 #ecoute {
 	position:relative;
 	width:596px;
-	height:137px;
+	height:280px;
 	float:left;
 	background-color: #EFF8FB;
 	border: 1px solid #EFF8FB;
-	font-size: 36px;
-	font-family: 'Raleway', sans-serif;
+	font-size: 50px;
+	font-family: 'Raleway', sans-serif !important;
 	color: rgb(0, 0, 0);
 	text-align: left;
 	-webkit-box-shadow: 0px 12px 8px 0px rgba(220, 220, 220, 1);
@@ -350,14 +370,23 @@ table, td, th {
 #ecoute_p {	
  margin:3px 20px 0 20px;
  text-align: left;
+ font-size: 50px;
+	font-family: 'Raleway', sans-serif !important;
+ height:93px;
  }
 #competence {
  margin:3px 110px 0 20px;
  text-align: center;
+ font-size: 50px;
+ font-family: 'Raleway', sans-serif !important;
+ height:93px;
 }
 #dynamisme {
  margin:3px 20px 0 20px;
  text-align: right;
+ font-size: 50px;
+ font-family: 'Raleway', sans-serif !important;
+ height:93px;
 }
 
 /* 
