@@ -17,7 +17,7 @@
 		</li>
 		<li><a href="page.php?page=autisme">Autisme</a>
 			<ul>
-				<li><a href="page.php?page=autismewhat">Qu'est-ce que l'autisme?</a></li>
+				<li><a href="page.php?page=autisme">Qu'est-ce que l'autisme?</a></li>
 				<li><a href="page.php?page=charte">Charte par les pers. autistes</a></li>
 				<li><a href="page.php?page=pec">Prise en charge</a></li>
 				<li><a href="page.php?page=methodeseduc">Méthodes éducatives</a></li>
@@ -67,9 +67,9 @@
 				<li><a href="prod_overview.php?classe=pdb">Produits de bouche</a></li>
 			</ul>
 		</li>
-		<li><a href="contact.php">Contact</a>
+		<li><a href="page.php?page=contact">Contact</a>
 			<ul>
-				<li><a href="contact.php">Nous contacter</a></li>
+				<li><a href="page.php?page=contact">Nous contacter</a></li>
 				<li><a href="page.php?page=locate">Nous localisez</a></li>
 			</ul>
 		</li>

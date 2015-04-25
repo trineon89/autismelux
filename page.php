@@ -74,6 +74,10 @@
 				/* ### PRODUIT ACTUELLE PAGE ### */
 				echo "prodact";
 			break;
+			case 'contact' :
+				/* ### LOCATE / MAP PAGE ### */;
+				include('incl/contact.inc.php');
+			break;
 			case 'locate' :
 				/* ### LOCATE / MAP PAGE ### */;
 				include('incl/locate.inc.php');
@@ -182,11 +186,47 @@
 			$reclamefield=is_reclame($reclamefield);
 		?>
 			<div class="row">
-			<?php if (strpos($_GET['page'],'atelier') !== false){ ?>
-				<div class="columns four"><img alt="" data-cke-saved-src="http://autisme-alpha.netty.lu/img/upload/dreckerei_thumb.png" src="http://autisme-alpha.netty.lu/img/upload/dreckerei_thumb.png" style="height:200px; width:200px;margin:10px;"></div>
+			<?php if (strpos($_GET['page'],'atelier') !== false){ 
+				$currpage=$_GET['page'];
+			switch ($currpage)
+			{
+			case 'ateliers':
+				echo "<div class=\"columns four\">&nbsp;</div>";
+				break;
+			case 'atelier_imprimerie': 
+				echo "<div class=\"columns four\"><img alt=\"\" data-cke-saved-src=\"http://autisme-alpha.netty.lu/img/upload/dreckerei_thumb.png\" src=\"http://autisme-alpha.netty.lu/img/upload/dreckerei_thumb.png\" style=\"height:200px; width:200px;margin:10px;\"></div>";
+				break;
+			case 'atelier_couture': 
+				echo "<div class=\"columns four\"><img alt=\"\" data-cke-saved-src=\"http://autisme-alpha.netty.lu/img/upload/bitzerei_thumb.png\" src=\"http://autisme-alpha.netty.lu/img/upload/bitzerei_thumb.png\" style=\"height:200px; width:200px;margin:10px;\"></div>";
+				break;
+			case 'atelier_ceramique': 
+				echo "<div class=\"columns four\"><img alt=\"\" data-cke-saved-src=\"http://autisme-alpha.netty.lu/img/upload/keramikfabrik_thumb.png\" src=\"http://autisme-alpha.netty.lu/img/upload/keramikfabrik_thumb.png\" style=\"height:200px; width:200px;margin:10px;\"></div>";
+				break;
+			case 'atelier_jardinage': 
+				echo "<div class=\"columns four\"><img alt=\"\" data-cke-saved-src=\"http://autisme-alpha.netty.lu/img/upload/gaertnerei_thumb.png\" src=\"http://autisme-alpha.netty.lu/img/upload/gaertnerei_thumb.png\" style=\"height:200px; width:200px;margin:10px;\"></div>";
+				break;
+			case 'atelier_buanderie': 
+				echo "<div class=\"columns four\"><img alt=\"\" data-cke-saved-src=\"http://autisme-alpha.netty.lu/img/upload/waescherei_thumb.png\" src=\"http://autisme-alpha.netty.lu/img/upload/waescherei_thumb.png\" style=\"height:200px; width:200px;margin:10px;\"></div>";
+				break;
+			case 'atelier_backoffice': 
+				echo "<div class=\"columns four\"><img alt=\"\" data-cke-saved-src=\"http://autisme-alpha.netty.lu/img/upload/back-office_thumb.png\" src=\"http://autisme-alpha.netty.lu/img/upload/back-office_thumb.png\" style=\"height:200px; width:200px;margin:10px;\"></div>";
+				break;
+			case 'atelier_info-media': 
+				echo "<div class=\"columns four\"><img alt=\"\" data-cke-saved-src=\"http://autisme-alpha.netty.lu/img/upload/info-media_thumb.png\" src=\"http://autisme-alpha.netty.lu/img/upload/info-media_thumb.png\" style=\"height:200px; width:200px;margin:10px;\"></div>";
+				break;
+			case 'atelier_cuisine': 
+				echo "<div class=\"columns four\"><img alt=\"\" data-cke-saved-src=\"http://autisme-alpha.netty.lu/img/upload/kichen_thumb.png\" src=\"http://autisme-alpha.netty.lu/img/upload/kichen_thumb.png\" style=\"height:200px; width:200px;margin:10px;\"></div>";
+				break;
+			case 'atelier_confiserie': 
+				echo "<div class=\"columns four\"><img alt=\"\" data-cke-saved-src=\"http://autisme-alpha.netty.lu/img/upload/confiserie_thumb.png\" src=\"http://autisme-alpha.netty.lu/img/upload/confiserie_thumb.png\" style=\"height:200px; width:200px;margin:10px;\"></div>";
+				break;
+			default: 
+				echo "";
+			}
+			?>
 				<div class="columns eight">
 					<?php //echo $title_big[0]; 
-					require_once('slider.html');
+					require_once('incl/slider/slider.html');
 					if($notfound==true) {
 					?><h1>WHOOPS!</h1> <? } ?>
 					<!-- _TITLE_big_ h1-->

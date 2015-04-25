@@ -54,7 +54,7 @@ if(isset($_GET["page"]))
 	{ ?>
 		<li><div class="pseudosel"><a href="page.php?page=autisme">Autisme</a></div>
 			<ul>
-				<li><a href="page.php?page=autismewhat">Qu'est-ce que l'autisme?</a></li>
+				<li><a href="page.php?page=autisme">Qu'est-ce que l'autisme?</a></li>
 				<li><a href="page.php?page=charte">Charte par les pers. autistes</a></li>
 				<li><a href="page.php?page=pec">Prise en charge</a></li>
 				<li><a href="page.php?page=methodeseduc">Méthodes éducatives</a></li>
@@ -125,10 +125,10 @@ if(isset($_GET["page"]))
 	}
 	if(in_array($_GET["page"], $arr_contact)) 
 	{ ?>
-		<li><div class="pseudosel"><a href="contact.php?page=contact">Contact</a></div>
+		<li><div class="pseudosel"><a href="page.php?page=contact">Contact</a></div>
 			<ul>
-				<li><a href="contact.php#map">Nous contacter</a></li>
-				<li><a href="contact.php#map">Nous localisez</a></li>
+				<li><a href="page.php?page=contact">Nous contacter</a></li>
+				<li><a href="page.php?page=locate">Nous localisez</a></li>
 			</ul>
 		</li>
 		<div class="breaksidenav"></div>

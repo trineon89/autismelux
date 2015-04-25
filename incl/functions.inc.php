@@ -1,6 +1,7 @@
 <?php
 	error_reporting(0);
 	require_once('config.inc.php');
+	
 	function get_Category_tags($classe) {
 		$sqlquery="SELECT * FROM tblCategory WHERE (`dtClasse` LIKE '$classe')";
 		$result = mysql_query($sqlquery);
@@ -100,7 +101,7 @@
 					$category=$roow[dtCategory];
 					$mediaresult="<h2 style=\"margin-bottom:0px;\">".$category."</h2><div class=\"vert\"><ul class=\"vertimages\">";
 				}
-				$mediaresult.= "<li><img src=\".".$roow[dtImage]."\" /><p>".$roow[dtTitle]."</p></li>";
+				$mediaresult.= "<li><a target=\"_blank\" href=\"".$roow[dtSource]."\"><img src=\".".$roow[dtImage]."\" /><p>".$roow[dtTitle]."</p></a></li>";
 				if($category<>$roow[dtCategory]) //change of category
 				{
 					echo "</ul></div>";
