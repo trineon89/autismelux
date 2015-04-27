@@ -196,6 +196,9 @@
 			case 'atelier_imprimerie': 
 				echo "<div class=\"columns four\"><img alt=\"\" data-cke-saved-src=\"http://autisme-alpha.netty.lu/img/upload/dreckerei_thumb.png\" src=\"http://autisme-alpha.netty.lu/img/upload/dreckerei_thumb.png\" style=\"height:200px; width:200px;margin:10px;\"></div>";
 				break;
+			case 'atelier_papier': 
+				echo "<div class=\"columns four\"><img alt=\"\" data-cke-saved-src=\"http://autisme-alpha.netty.lu/img/upload/pabeier_thumb.png\" src=\"http://autisme-alpha.netty.lu/img/upload/pabeier_thumb.png\" style=\"height:200px; width:200px;margin:10px;\"></div>";
+				break;
 			case 'atelier_couture': 
 				echo "<div class=\"columns four\"><img alt=\"\" data-cke-saved-src=\"http://autisme-alpha.netty.lu/img/upload/bitzerei_thumb.png\" src=\"http://autisme-alpha.netty.lu/img/upload/bitzerei_thumb.png\" style=\"height:200px; width:200px;margin:10px;\"></div>";
 				break;
