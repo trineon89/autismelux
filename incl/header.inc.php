@@ -18,7 +18,7 @@
 		<li><a href="page.php?page=autisme">Autisme</a>
 			<ul>
 				<li><a href="page.php?page=autisme">Qu'est-ce que l'autisme?</a></li>
-				<li><a href="page.php?page=charte">Charte par les pers. autistes</a></li>
+				<li><a href="page.php?page=charte">Charte pour les personnes autistes</a></li>
 				<li><a href="page.php?page=pec">Prise en charge</a></li>
 				<li><a href="page.php?page=methodeseduc">Méthodes éducatives</a></li>
 			</ul>
@@ -36,12 +36,12 @@
 				<li><a href="page.php?page=ses">Soins et santé</a></li>
 				<li><a href="page.php?page=ateliers">Ateliers</a>
 					<ul>
-						<li><a href="page.php?page=atelier_couture">Couture créative</a></li>
-						<li><a href="page.php?page=atelier_ceramique">Ceramique</a></li>
-						<li><a href="page.php?page=atelier_papier">Papier recyclé</a></li>
+						<li><a href="page.php?page=atelier_couture">Couture</a></li>
+						<li><a href="page.php?page=atelier_ceramique">Céramique</a></li>
+						<li><a href="page.php?page=atelier_papier">Papier</a></li>
 						<li><a href="page.php?page=atelier_jardinage">Jardinage</a></li>
 						<li><a href="page.php?page=atelier_buanderie">Buanderie</a></li>
-						<li><a href="page.php?page=atelier_imprimerie">imprimerie</a></li>
+						<li><a href="page.php?page=atelier_imprimerie">Imprimerie</a></li>
 						<li><a href="page.php?page=atelier_backoffice">Back-office</a></li>
 						<li><a href="page.php?page=atelier_info-media">Info-média</a></li>
 						<li><a href="page.php?page=atelier_cuisine">Cuisine</a></li>
