@@ -8,6 +8,10 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,700,800,600);
 @import url(http://fonts.googleapis.com/css?family=Raleway:700);
 @import url(http://fonts.googleapis.com/css?family=Satisfy);
+@font-face {
+    font-family: lobster;
+    src: url(fonts/lobster_1.3-webfont.ttf);
+}
 html, html a, p, a:visited, a:hover, li {
     text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: subpixel-antialiased !important;
@@ -259,6 +263,8 @@ table, td, th {
 	background-color: #EFF8FB;
 	border: 1px solid #EFF8FB;
 	border-bottom: 1px solid #ffffff;
+	-webkit-border-top-left-radius: 50px;
+	-moz-border-radius-topleft: 50px;
 	-webkit-box-shadow: 0px 12px 8px 0px rgba(220, 220, 220, 1);
 	-moz-box-shadow:    0px 12px 8px 0px rgba(220, 220, 220, 1);
 	box-shadow:         0px 12px 8px 0px rgba(220, 220, 220, 1);
@@ -351,7 +357,7 @@ table, td, th {
 	background-color: #EFF8FB;
 	border: 1px solid #EFF8FB;
 	font-size: 50px;
-	font-family: 'Raleway', sans-serif !important;
+	font-family: 'lobster', sans-serif !important;
 	color: rgb(0, 0, 0);
 	text-align: left;
 	-webkit-box-shadow: 0px 12px 8px 0px rgba(220, 220, 220, 1);
@@ -370,22 +376,22 @@ table, td, th {
 #ecoute_p {	
  margin:3px 20px 0 20px;
  text-align: left;
- font-size: 50px;
-	font-family: 'Raleway', sans-serif !important;
+ font-size: 72px;
+	font-family: 'lobster', sans-serif !important;
  height:93px;
  }
 #competence {
- margin:3px 110px 0 20px;
+ margin:-5px 110px 0 20px;
  text-align: center;
- font-size: 50px;
- font-family: 'Raleway', sans-serif !important;
+ font-size: 72px;
+ font-family: 'lobster', sans-serif !important;
  height:93px;
 }
 #dynamisme {
- margin:3px 20px 0 20px;
+ margin:-5px 20px 0 20px;
  text-align: right;
- font-size: 50px;
- font-family: 'Raleway', sans-serif !important;
+ font-size: 72px;
+ font-family: 'lobster', sans-serif !important;
  height:93px;
 }
 
